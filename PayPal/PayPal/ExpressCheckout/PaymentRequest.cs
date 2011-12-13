@@ -246,7 +246,7 @@ namespace PayPal.ExpressCheckout {
 					double oldAmount = amount;
 					
 					amount = value;
-					r.o.RequestNVP.Set( "L_PAYMENTREQUEST_" + n + "_DESC" + m , value );
+					r.o.RequestNVP.Set( "L_PAYMENTREQUEST_" + n + "_AMT" + m , value );
 					r.updateItemAmount( this , oldAmount );
 				}
 			}
