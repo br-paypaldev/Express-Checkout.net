@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayPal", "PayPal\PayPal.csproj", "{05D44B98-50A8-480B-AE72-8D9B8A60BFDC}"
+EndProject
+Project("{9344bdbb-3e7f-41fc-a0dd-8665d75ee146}") = "Packages", "Packages.mdproj", "{673225C4-404E-402E-B1C4-45E9D3305D64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05D44B98-50A8-480B-AE72-8D9B8A60BFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D44B98-50A8-480B-AE72-8D9B8A60BFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D44B98-50A8-480B-AE72-8D9B8A60BFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D44B98-50A8-480B-AE72-8D9B8A60BFDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673225C4-404E-402E-B1C4-45E9D3305D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673225C4-404E-402E-B1C4-45E9D3305D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PayPal\PayPal.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+		$0.StandardHeader = $4
+		$4.Text = 
+		$4.inheritsSet = Apache2License
+		$0.VersionControlPolicy = $5
+		$5.inheritsSet = Mono
+		$0.ChangeLogPolicy = $6
+		$6.UpdateMode = None
+		$6.MessageStyle = $7
+		$7.LineAlign = 0
+		$6.inheritsSet = Mono
+		description = Integração com a API do PayPal
+	EndGlobalSection
+EndGlobal

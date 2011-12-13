@@ -1,0 +1,34 @@
+﻿<Properties>
+  <AuthorInfo Name="João Batista Neto" Email="neto.joaobatista@imasters.com.br" Copyright="neto.joaobatista" ctype="AuthorInformation" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PayPal/PayPal/ExpressCheckout/PaymentRequest.cs" ctype="Workbench">
+    <Files>
+      <File FileName="../Teste/Teste/Controllers/HomeController.cs" Line="56" Column="54" />
+      <File FileName="PayPal/PayPal/ExpressCheckout/SetExpressCheckoutOperation.cs" Line="193" Column="38" />
+      <File FileName="PayPal/PayPal/ExpressCheckout/PaymentRequest.cs" Line="191" Column="50" />
+      <File FileName="PayPal/PayPal/ExpressCheckout/ExpressCheckoutApi.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Packages" expanded="True" />
+          <Node name="PayPal" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="PayPal" expanded="True">
+              <Node name="Enum" expanded="True" />
+              <Node name="ExpressCheckout" expanded="True">
+                <Node name="Enum" expanded="True" />
+                <Node name="PaymentRequest.cs" selected="True" />
+              </Node>
+              <Node name="Nvp" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+</Properties>

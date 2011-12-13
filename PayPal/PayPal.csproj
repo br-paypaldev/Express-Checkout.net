@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05D44B98-50A8-480B-AE72-8D9B8A60BFDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PayPal</RootNamespace>
+    <AssemblyName>PayPal</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="PayPal\PayPalApiFactory.cs" />
+    <Compile Include="PayPal\ExpressCheckout\ExpressCheckoutApi.cs" />
+    <Compile Include="PayPal\ExpressCheckout\DoExpressCheckoutPaymentOperation.cs" />
+    <Compile Include="PayPal\ExpressCheckout\GetExpressCheckoutDetailsOperation.cs" />
+    <Compile Include="PayPal\ExpressCheckout\SetExpressCheckoutOperation.cs" />
+    <Compile Include="PayPal\ExpressCheckout\PaymentRequest.cs" />
+    <Compile Include="PayPal\Nvp\NVP.cs" />
+    <Compile Include="PayPal\Nvp\RequestNVP.cs" />
+    <Compile Include="PayPal\Nvp\ResponseNVP.cs" />
+    <Compile Include="PayPal\Enum\AbstractTypeSafeEnumeration.cs" />
+    <Compile Include="PayPal\ExpressCheckout\PaymentAction.cs" />
+    <Compile Include="PayPal\Enum\CurrencyCode.cs" />
+    <Compile Include="PayPal\Enum\LocaleCode.cs" />
+    <Compile Include="PayPal\Enum\Ack.cs" />
+    <Compile Include="PayPal\ExpressCheckout\Enum\SolutionType.cs" />
+    <Compile Include="PayPal\ExpressCheckout\Enum\LandingPage.cs" />
+    <Compile Include="PayPal\ExpressCheckout\Enum\ChannelType.cs" />
+    <Compile Include="PayPal\ExpressCheckout\Enum\ItemCategory.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="PayPal\" />
+    <Folder Include="PayPal\" />
+    <Folder Include="PayPal\ExpressCheckout\" />
+    <Folder Include="PayPal\Nvp\" />
+    <Folder Include="PayPal\Enum\" />
+    <Folder Include="PayPal\ExpressCheckout\Enum\" />
+  </ItemGroup>
+</Project>
