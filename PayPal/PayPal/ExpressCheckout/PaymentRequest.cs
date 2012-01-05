@@ -231,6 +231,7 @@ namespace PayPal.ExpressCheckout {
 		public class Item {
 			private int m;
 			private int n;
+			private int qty = 0;
 			private PaymentRequest r;
 			private double amount;
 			
@@ -243,11 +244,11 @@ namespace PayPal.ExpressCheckout {
 			public double Amount {
 				get { return amount; }
 				set {
-					double oldAmount = amount;
+					double old = amount;
 					
 					amount = value;
 					r.o.RequestNVP.Set( "L_PAYMENTREQUEST_" + n + "_AMT" + m , value );
-					r.updateItemAmount( this , oldAmount );
+					r.updateItemAmount( this , old * qty );
 				}
 			}
 			
@@ -282,8 +283,14 @@ namespace PayPal.ExpressCheckout {
 			}
 			
 			public int Quantity {
-				get { return r.o.RequestNVP.GetInt( "L_PAYMENTREQUEST_" + n + "_QTY" + m ); }
-				set { r.o.RequestNVP.Set( "L_PAYMENTREQUEST_" + n + "_QTY" + m , value ); }
+				get { return qty; }
+				set {
+					int old = qty;
+					qty = value;
+					
+					r.o.RequestNVP.Set( "L_PAYMENTREQUEST_" + n + "_QTY" + m , value );
+					r.updateItemAmount( this , amount * old );
+				}
 			}
 			
 			public double TaxAmount {
