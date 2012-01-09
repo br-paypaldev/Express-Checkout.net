@@ -225,7 +225,7 @@ namespace PayPal.ExpressCheckout {
 		}
 		
 		void updateItemAmount( Item item , double oldAmount ) {
-			ItemAmount += item.Amount - oldAmount;
+			ItemAmount += (item.Amount*item.Quantity) - oldAmount;
 		}
 		
 		public class Item {
